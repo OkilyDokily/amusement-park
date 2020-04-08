@@ -26,3 +26,7 @@ img{
 div.rides p {
   margin: 0;
 }
+
+.scary-60, .scary-58, .scary-56, .kid-48 {
+  display: none;
+}
