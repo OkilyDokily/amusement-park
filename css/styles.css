@@ -7,6 +7,10 @@
   color: white;
 }
 
+img{
+  width: 200px;
+}
+
 #prompt input{
   width: 45px;
 }
