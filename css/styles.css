@@ -22,3 +22,7 @@ img{
 #formOne {
   margin: 40px;
 }
+
+div.rides p {
+  margin: 0;
+}
