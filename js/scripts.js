@@ -1,6 +1,14 @@
 $(document).ready(function(){
-  $("#formOne").click(function(e){
+  $("#formOne").submit(function(e){
     e.preventDefault();
-    
+    var scaryHeightArray = [60,58,56];
+    var height = parseInt($("#height").val());
+    scaryHeightArray.forEach(function(number){
+      
+      if (height >= number){
+        $(".scary-"+ number).show();
+        console.log(".scary-"+ number);
+      }
+    })
   });
 });
