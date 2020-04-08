@@ -3,12 +3,17 @@ $(document).ready(function(){
     e.preventDefault();
     var scaryHeightArray = [60,58,56];
     var height = parseInt($("#height").val());
+    hide();
     scaryHeightArray.forEach(function(number){
-      
       if (height >= number){
         $(".scary-"+ number).show();
-        console.log(".scary-"+ number);
       }
     })
+
+    function hide(){
+      scaryHeightArray.forEach(function(number){
+          $(".scary-"+ number).hide();
+      });
+    }
   });
 });
