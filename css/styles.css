@@ -28,10 +28,17 @@ img{
   margin: 40px;
 }
 
+div.rides {
+  margin: 20px;
+}
+
 div.rides p {
   margin: 0;
 }
 
 .scary-60, .scary-58, .scary-56, .kid-36-54 {
   display: none;
+  margin: 20px;
+  width: 213px;
+  padding: 5px;
 }
