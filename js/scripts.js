@@ -46,7 +46,7 @@ $(document).ready(function(){
       }
     });
     
-    function hide(){
+    function show(){
       scaryHeightArray.forEach(function(number){
           $(".scary-"+ number).show();
       });
