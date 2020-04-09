@@ -1,3 +1,7 @@
+
+
+
+
 $(document).ready(function(){
   $("#showsome").click(function(e){
     e.preventDefault();
@@ -20,9 +24,12 @@ $(document).ready(function(){
     function hide(){
       scaryHeightArray.forEach(function(number){
           $(".scary-"+ number).hide();
+          $(".scary-"+ number).removeClass("can-ride");
+
       });
       kidHeightArray.forEach(function(number){
         $( ".kid-"+ number[0] + "-" + number[1]).hide();
+        $( ".kid-"+ number[0] + "-" + number[1]).removeClass("can-ride");
     });
     }
 
@@ -30,6 +37,7 @@ $(document).ready(function(){
   });
   $("#showall").click(function(e){
     e.preventDefault();
+
     var scaryHeightArray = [60,58,56];
     var kidHeightArray = [[36,54]];
     var height = parseInt($("#height").val());
@@ -49,9 +57,12 @@ $(document).ready(function(){
     function show(){
       scaryHeightArray.forEach(function(number){
           $(".scary-"+ number).show();
+          $(".scary-"+ number).removeClass("can-ride");
       });
       kidHeightArray.forEach(function(number){
         $( ".kid-"+ number[0] + "-" + number[1]).show();
+        $( ".kid-"+ number[0] + "-" + number[1]).removeClass("can-ride");
+        
     });
     }
 
