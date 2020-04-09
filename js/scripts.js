@@ -1,5 +1,5 @@
 $(document).ready(function(){
-  $("#formOne").submit(function(e){
+  $("#showsome").click(function(e){
     e.preventDefault();
     var scaryHeightArray = [60,58,56];
     var kidHeightArray = [[36,54]];
